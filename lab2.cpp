@@ -85,7 +85,7 @@ int main(int argc, char* argv[]){
             }
 
             cout<<"Suma: "<<(suma/6)<<endl;
-            
+
 
 
         } //fin opcion2
@@ -102,7 +102,9 @@ int main(int argc, char* argv[]){
 
 
 int menu(){
-    cout << "1. Ejercicio1" << endl
+    cout<<endl;
+    cout <<"***** MENU ***** "<< endl 
+         <<"1. Ejercicio1" << endl
          << "2. Ejercicio2" << endl
          << "3. Ejercicio3" << endl
          << "4. Salir" << endl;
