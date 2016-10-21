@@ -47,15 +47,16 @@ int main(int argc, char* argv[]){
                 }
             }
 
-            for (int i = numero1.size()-1;i >= 0; --i){
+            for (int i = numero1.size()-1; i >= 0; --i){
                 base += arr[cont] * pow(mayor+1,i);
                 cont++;
             }
 
             if (contador2==mayor){
-                cout<<numero1<<" esta en base "<<mayor+1<<"y equivale a "<<base;
-            }else{
                 cout<<"No es base pandigital"<<endl;
+            }else{
+                
+                cout<<numero1<<" esta en base "<<mayor+1<<" y equivale a "<<base<<endl;
             }
 
 
@@ -84,6 +85,7 @@ int main(int argc, char* argv[]){
             }
 
             cout<<"Suma: "<<(suma/6)<<endl;
+            
 
 
         } //fin opcion2
