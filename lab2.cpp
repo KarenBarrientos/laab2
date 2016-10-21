@@ -12,12 +12,11 @@ int main(int argc, char* argv[]){
     int opcion,numero2,num=2;
     int resultado=0,suma=0,contador=0;
     int mayor=0;
-    bool cierto=false;
     int contador2=-1;
-    int base=0, cont=0;
 
     while ( (opcion = menu()) != 4){
         if (opcion == 1){
+
             cout<<"Ingrese numero: "<<endl;
             cin>>numero1;
             int arr[numero1.size()+1];
@@ -28,27 +27,32 @@ int main(int argc, char* argv[]){
             }
 
             for (int i = 0; i < numero1.size(); ++i){
-                if (mayor<a[i]){
+                if (mayor<arr[i]){
                     mayor=arr[i];
                 }
             }
-            
-            for (int i = 0; i < mayor; ++i){
+            bool cierto=false;
+            int base=0, cont=0;
+
+            for (int i = 0; i <= mayor; ++i){
                 for (int j = 0; j < numero1.size(); ++j){
-                    
+                    if (arr[j]==i){
+                        cierto=true;
+                    }
+
+                    if (cierto){
+                        contador2++;
+                    }
 
                 }
             }
 
-            if (cierto){
-                contador2++;
-            }
-
-            for (int i = numero1.size()-1;i>=0; --i){
-                base=base+a[cont]*pow(mayor+1,i);
+            for (int i = numero1.size()-1;i >= 0; --i){
+                base += arr[cont] * pow(mayor+1,i);
                 cont++;
             }
-            if (contador==mayor){
+
+            if (contador2==mayor){
                 cout<<numero1<<" esta en base "<<mayor+1<<"y equivale a "<<base;
             }else{
                 cout<<"No es base pandigital"<<endl;
