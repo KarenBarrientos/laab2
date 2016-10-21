@@ -76,7 +76,6 @@ int main(int argc, char* argv[]){
                 }
 
                 if(esPrimo(num)){
-                    //printf("%d ",numero2);
                     suma = suma + numero2;
                     contador++;
                 }
@@ -90,6 +89,7 @@ int main(int argc, char* argv[]){
         } //fin opcion2
 
         if (opcion==3){
+            cout<<"NO LO HICE XD :( "<<endl;
             
         }//fin opcion3
 
