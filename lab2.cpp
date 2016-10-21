@@ -82,7 +82,7 @@ int main(int argc, char* argv[]){
                 }
                 num++;
             
-            }
+            } //fin for
 
             cout<<"Suma: "<<(suma/6)<<endl;
 
