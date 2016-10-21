@@ -40,6 +40,10 @@ int main(int argc, char* argv[]){
                 }
             }
 
+            if (cierto){
+                contador2++;
+            }
+
             for (int i = numero1.size()-1;i>=0; --i){
                 base=base+a[cont]*pow(mayor+1,i);
                 cont++;
